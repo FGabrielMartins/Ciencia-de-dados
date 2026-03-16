@@ -47,7 +47,7 @@ plt.hist(
     edgecolor="black"
 )
 
-plt.title("Histograma das Notas de Estatística")
+plt.title("Histograma das idades")
 plt.xlabel("Idade")
 plt.ylabel("Frequência")
 
@@ -68,6 +68,6 @@ plt.hist(
 )
 
 plt.legend()
-plt.title("Comparação entre Horas de estudos VS Aprovados")
+plt.title("Comparação entre Horas de Estudos VS Sono")
 
 plt.show()
