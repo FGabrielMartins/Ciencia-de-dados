@@ -69,3 +69,37 @@ plt.title("Horas de estudos VS Horas de Sono")
 plt.ylabel("Horas")
 
 plt.show()
+
+#Boxplot Dentado (notched Boxplot)
+plt.boxplot([
+    carregar_dados["nota_estatistica"],
+    carregar_dados["nota_python"]
+],
+notch=True,  #entalhe
+patch_artist=True
+)
+
+plt.xticks([1,2], ["Notas de Estatística", "Notas de Python"])
+
+plt.title("Boxplot dentado Estatística VS Python")
+plt.ylabel("Notas")
+
+plt.grid()
+plt.show()
+
+#Boxplot dentado (notched Bocplot) recomendado
+plt.figure(figsize=(8,5))
+
+plt.boxplot([
+    carregar_dados["nota_estatistica"],
+    carregar_dados["nota_python"]
+],
+patch_artist=True,
+notch=True
+)
+
+plt.xticks([1,2], ["Notas de Estatística", "Notas de Python"])
+plt.ylabel("NOtas")
+
+plt.grid()
+plt.show()
